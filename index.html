@@ -1,5 +1,24 @@
+<!-- <?php
+$langs = array(
+	"fr" => "tolosanofranck.fr",
+	"en" => "tolosanofranck.com",
+	"es" => "tolosanofranck.es",
+	"de" => "tolosanofranck.de"
+);
+
+if(isset($_GET['lang']) && isset($langs[$_GET['lang']])){
+	$current_lang = $_GET['lang'];
+	$current_url = $langs[$current_lang];
+} else {
+	$current_lang = "fr";
+	$current_url = "tolosanofranck.fr";
+}
+if(isset($langs[$current_lang])) unset($langs[$current_lang]);
+?> -->
+
 <!DOCTYPE html>
 <html lang="fr-FR">
+<!-- <html lang="<?= $current_lang; ?>"> -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,6 +44,14 @@
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- <?php
+	foreach($langs as $lang => $url){
+		echo'<link rel="alternate" href="'.$url.'" hreflang="'.$lang.'">';
+	}
+	?>
+	<link rel="canonical" href="<?= $current_url; ?>"> -->
 </head>
 <body>
 
@@ -34,9 +61,9 @@
 
         <nav>
             <ul>
-                <li><a href="#">Presentation</a></li>
-                <li><a href="#">Article</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Presentation</a> |</li>
+                <li><a href="#">Article</a> |</li>
+                <li><a href="#">Services</a> |</li>
                 <li><a href="#">Competences</a></li>
             </ul>
         </nav>
@@ -103,58 +130,60 @@
 
         <section class="portfolio">
             <h3>Mes projets</h3>
-            <div class="card">
+
+            <div class="gallery">
                 <figure>
+                    <a href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                         alt="img de projet 1">
+                        alt="img de projet 1">
+                    </a>
                     <figcaption>projet n1</figcaption>
                 </figure>
-
-                <div class="card-titre">
-                    <h4>Projet 1</h4>
-                </div>
-
-                <div class="card-text">
-                    creation d'un projet clone
-                    <a href="http://" target="_blank" >Lien ici </a>
-                </div>
-            </div>
-
-            <div class="card">
-
                 <figure>
+                    <a href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                         alt="img de projet 1">
-                    <figcaption>projet n1</figcaption>
+                        alt="img de projet 2">
+                    </a>
+                    <figcaption>projet n2</figcaption>
                 </figure>
 
-                <div class="card-titre">
-                    <h4>Projet 2</h4>
-                </div>
-
-                <div class="card-text">
-                    creation d'un projet clone
-                    <a href="http://" target="_blank" >Lien ici </a>
-                </div>
-            </div>
-
-            <div class="card">
-
                 <figure>
+                    <a href="#">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                         alt="img de projet 1">
-                    <figcaption>projet n1</figcaption>
+                        alt="img de projet 3">
+                    </a>
+                    <figcaption>projet n3</figcaption>
+                </figure>
+                <figure>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
+                        alt="img de projet 4">
+                    </a>
+                    <figcaption>projet n4</figcaption>
+                </figure>
+                <figure>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
+                        alt="img de projet 5">
+                    </a>
+                    <figcaption>projet n5</figcaption>
                 </figure>
 
-                <div class="card-titre">
-                    <h4>Projet 3</h4>
-                </div>
+                <figure>
+                    <a href="#">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
+                        alt="img de projet 6">
+                    </a>
+                    <figcaption>projet n6</figcaption>
+                </figure>
 
-                <div class="card-text">
-                    creation d'un projet clone
-                    <a href="http://" target="_blank" >Lien ici </a>
-                </div>
+
+
+
+
             </div>
+
+            
 
         </section>
         

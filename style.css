@@ -2,7 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 noscript{
@@ -24,9 +24,10 @@ nav {
 nav ul{
     
     padding: 0;
-    display: flex;
+    text-align: center;
+    /* display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: row; */
 }
 
 nav li {
@@ -35,7 +36,7 @@ nav li {
     
 }
 
-nav li a {
+a {
     text-decoration: none;
     
 }
@@ -44,6 +45,9 @@ nav li a {
 .presentation{
    margin-top: 50px; 
    
+}
+.presentation img {
+    width: 200px;
 }
 
 h1, h2, h3 {
@@ -55,7 +59,7 @@ h1, h2, h3 {
 }
 
 figcaption{
-    text-align: right;
+    
     font-style: italic;
 }
 
@@ -81,23 +85,30 @@ aside{
 
 .portfolio{
     /* display: flex; */
-    flex-direction: column;
+    /* flex-direction: column; */
     /* justify-content: center;
     align-items: center; */
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img{
+    width: 100%;
+    vertical-align: middle;
+    border-radius: 10px;
+    cursor: pointer;
+}
 
-.card{
-
-    text-align: center;
-    width: 400px;
+.gallery figcaption {
+    float: right;
     
-    border-radius: 5px;
 }
 
-.card img {
-    width: 300px;
-}
+
+
 
 .contact{
     margin-top: 50px;
@@ -105,6 +116,9 @@ aside{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
+    
+
 }
 
 button{
@@ -113,7 +127,15 @@ button{
 
 
 footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+
+footer p {
     margin-top: 20px;
+   
 }
 
 
