@@ -41,6 +41,12 @@ a {
     
 }
 
+.services, .competences{
+    text-align: center;
+    margin: 15px auto 0 auto;
+}
+
+
 
 .presentation{
    margin-top: 50px; 
@@ -73,8 +79,14 @@ article p {
     margin-top: 20px;
 }
 
+
+.main-articles {
+    
+}
 aside{
-    width: 40%;
+    
+    
+    width: 20%;
     float: right;
     padding-left: 20px;
     margin-left: 20px;
@@ -82,6 +94,8 @@ aside{
     font-style: italic;
     
 }
+
+
 
 .portfolio{
     /* display: flex; */
@@ -143,14 +157,39 @@ footer p {
 
 
   
+    p{
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding: 10px;
+        /* width: 900px; */
+    }
 
+
+    aside{
+        width: 10%;
+       
+    } 
 
     .portfolio{
         /* display: flex; */
         flex-direction: row;
        
     }
-    
+
+    .img{
+        width: 200px;
+        margin: 0 auto 0 auto;
+    }
+    .avatar{
+        margin: 0 auto 0 auto;
+    }
+
+    figure {
+        width: 200px;
+    }
+
+
+
 
 }
 
