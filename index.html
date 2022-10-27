@@ -27,6 +27,8 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
     <title>Portfolio - Developpeur Web </title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/lozad"></script>
+
 
     <meta property="og:title" content="Portfolio Tolosano Franck">
     <meta property="og:type" content="website">
@@ -110,11 +112,11 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
         <section class="services">
             <h2>Mes services</h2>
             
-                <p>Création de site web</p>
-                <p>Hebergement</p>
-                <p>Gestion du projet</p>
-                <p>Accompagnement</p>
-                <p>Soutien</p>
+            <p>Création de site web</p>
+            <p>Hebergement</p>
+            <p>Gestion du projet</p>
+            <p>Accompagnement</p>
+            <p>Soutien</p>
             
 
         </section>
@@ -122,11 +124,11 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
         <section class="competences">
             <h3>Mes competences</h3>
             
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JS</p>
-                <p>Boostsrap</p>
-                <p>Angular Ts</p>
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JS</p>
+            <p>Boostsrap</p>
+            <p>Angular Ts</p>
            
         </section>
 
@@ -179,15 +181,26 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
                     <figcaption>projet n6</figcaption>
                 </figure>
 
-
-
-
-
             </div>
 
-            
-
+ 
         </section>
+
+        <h3>Lozard.Js </h3>
+        <div class="thumb">
+         <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
+        </div>
+        <div class="thumb">
+            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
+        </div>
+
+        <div class="thumb">
+            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
+        </div>
+        <div class="thumb">
+            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
+        </div>
+
         
         <section class="contact">
             <h3>Contactez moi! </h3>
@@ -215,5 +228,23 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
         </adress>
     </footer>
 
+
+    <script type="application/id+json">
+        {
+            "@context":"https://",
+            "@type":"Organisation",
+            "itemReviewed": {
+            "image": "src/avat.png",
+            "name": "Franck Tolosano",
+            "contact": "06 06 06 06 06"
+            "mail":"@"
+            }
+        }
+        
+    </script>
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>
