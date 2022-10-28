@@ -45,7 +45,9 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
 
     
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+   
 
 
     <!-- <?php
@@ -63,16 +65,16 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
 
         <nav>
             <ul>
-                <li><a href="#">Presentation</a> |</li>
-                <li><a href="#">Article</a> |</li>
-                <li><a href="#">Services</a> |</li>
-                <li><a href="#">Competences</a></li>
+                <li><a href="#presantation">Presentation</a> |</li>
+                <li><a href="#article">Article</a> |</li>
+                <li><a href="#services">Services</a> |</li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="presentation">
+        <section id="presentation">
             <div class="txt">
                 <h1>Développeur web</h1>
                 <p>Bonjour moi c'est Franck j'ai 24 ans et je suis étudiant dans le développement web. En alternance à Ynov Sophia je partageais mes semaines entre mes cours et mon entreprise </p>
@@ -82,12 +84,12 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
                 <figure>
                     <img src="img/avat.png"
                          alt="un avatar de moi" class="avatar">
-                    <figcaption>mon avatar</figcaption>
+                    <!-- <figcaption>mon avatar</figcaption> -->
                 </figure>
             </div>
         </section>
 
-        <article class="article">
+        <article id="article">
             <h2>Le SEO côté développeur</h2>
             <div class="main-article">
 
@@ -109,30 +111,32 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
 
         
 
-        <section class="services">
+        <section id="services">
             <h2>Mes services</h2>
-            
-            <p>Création de site web</p>
-            <p>Hebergement</p>
-            <p>Gestion du projet</p>
-            <p>Accompagnement</p>
-            <p>Soutien</p>
+            <div class="card-infos">
+                <p>Création de site web / e-commerce</p>
+                <p>Hebergement</p>
+                <p>Gestion de projet</p>
+                <p>Accompagnement</p>
+                <p>Soutien</p>
+            </div>
             
 
         </section>
 
-        <section class="competences">
+        <section id="competences">
             <h3>Mes competences</h3>
-            
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>JS</p>
-            <p>Boostsrap</p>
-            <p>Angular Ts</p>
-           
+            <div class="card-infos">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JS</p>
+                <p>Boostsrap / Tailwind</p>
+                <p>Angular Ts</p>
+                <p>Wordpress</p>
+            </div>
         </section>
 
-        <section class="portfolio">
+        <section id="portfolio">
             <h3>Mes projets</h3>
 
             <div class="gallery">
@@ -186,7 +190,7 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
  
         </section>
 
-        <h3>Lozard.Js </h3>
+        <!-- <h3>Lozard.Js </h3>
         <div class="thumb">
          <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
         </div>
@@ -199,10 +203,10 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
         </div>
         <div class="thumb">
             <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
-        </div>
+        </div> -->
 
         
-        <section class="contact">
+        <section id="contact">
             <h3>Contactez moi! </h3>
 
             <label for="name">Votre nom</label>
