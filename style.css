@@ -1,8 +1,10 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     padding: 0;
     margin: 0;
     /* box-sizing: border-box; */
+    background-color: rgb(234, 244, 244);
+    
 }
 
 noscript{
@@ -38,21 +40,27 @@ nav li {
 
 a {
     text-decoration: none;
+    color: #000000;
     
 }
 
-.services, .competences{
+main {
+    padding: 12px;
+}
+
+#services, #competences{
+    
     text-align: center;
     margin: 15px auto 0 auto;
 }
 
 
 
-.presentation{
+#presentation{
    margin-top: 50px; 
    
 }
-.presentation img {
+#presentation img {
     width: 200px;
 }
 
@@ -60,7 +68,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.presentation p{
+#presentation p{
     margin-top: 20px; 
 }
 
@@ -80,9 +88,7 @@ article p {
 }
 
 
-.main-articles {
-    
-}
+
 aside{
     
     
@@ -95,9 +101,19 @@ aside{
     
 }
 
+.card-infos {
+    box-shadow: 10px 10px 5px rgb(107, 144, 128);
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin: 0 auto 0 auto;
+}
 
+.card-infos p {
+    padding-top: 5px;
+}
 
-.portfolio{
+#portfolio{
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center;
@@ -151,7 +167,7 @@ aside{
 
 
 
-.contact{
+#contact{
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -197,7 +213,7 @@ footer p {
        
     } 
 
-    .portfolio{
+    #portfolio{
         /* display: flex; */
         flex-direction: row;
        
@@ -213,6 +229,10 @@ footer p {
 
     figure {
         width: 200px;
+    }
+
+    .main-articles {
+        padding: 0 10%;
     }
 
 
