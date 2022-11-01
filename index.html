@@ -82,9 +82,11 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
 
             <div class="img">
                 <figure>
-                    <img src="img/avat.png"
-                         alt="un avatar de moi" class="avatar">
-                    <!-- <figcaption>mon avatar</figcaption> -->
+                    <picture>
+                        <source type="img/mon-avatar.webp" srcset="mon-avatar.webp">
+                        <source type="img/mon-avatar.png" srcset="mon-avatar.png">
+                        <img data-src="img/mon-avatar.png" alt="un avatar de moi" class="avatar lozad" title="Mon avatar Tolosano Franck" width="200" height="250">
+                    </picture>
                 </figure>
             </div>
         </section>
@@ -110,8 +112,9 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
         </article>
 
         
+    <section id="informations">
 
-        <section id="services">
+        <div id="services">
             <h2>Mes services</h2>
             <div class="card-infos">
                 <p>Création de site web / e-commerce</p>
@@ -120,12 +123,10 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
                 <p>Accompagnement</p>
                 <p>Soutien</p>
             </div>
-            
+        </div>
 
-        </section>
-
-        <section id="competences">
-            <h3>Mes competences</h3>
+        <div id="competences">
+            <h2>Mes competences</h2>
             <div class="card-infos">
                 <p>HTML</p>
                 <p>CSS</p>
@@ -134,55 +135,68 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
                 <p>Angular Ts</p>
                 <p>Wordpress</p>
             </div>
-        </section>
+        </div>
+
+    </section>
+
 
         <section id="portfolio">
-            <h3>Mes projets</h3>
+            <h2>Mes projets</h2>
 
             <div class="gallery">
                 <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 1">
-                    </a>
-                    <figcaption>projet n1</figcaption>
+                    <picture>
+                        <source type="img/projet-landingpage1.webp" srcset="projet-landingpage1.webp">
+                        <source type="img/projet-landingpage1.png" srcset="projet-landingpage1.png">
+                        <img class="lozad" data-src="img/projet-landingpage1.png" alt="image de projet numero 1" width="270" height="203" title="Image de mon premier projet: projet 1">
+                        <figcaption>projet n1</figcaption>
+                    </picture>
                 </figure>
+                
                 <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 2">
-                    </a>
-                    <figcaption>projet n2</figcaption>
-                </figure>
-
-                <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 3">
-                    </a>
-                    <figcaption>projet n3</figcaption>
-                </figure>
-                <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 4">
-                    </a>
-                    <figcaption>projet n4</figcaption>
-                </figure>
-                <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 5">
-                    </a>
-                    <figcaption>projet n5</figcaption>
+                    <picture>
+                        <source type="img/projet-landingpage2.webp" srcset="projet-landingpage2.webp">
+                        <source type="img/projet-landingpage2.png" srcset="projet-landingpage2.png">
+                        <img class="lozad" data-src="img/projet-landingpage2.png" alt="image de projet numero 2" width="270" height="203" title="Image de mon premier projet: projet 2">
+                        <figcaption>projet n2</figcaption>
+                    </picture>
                 </figure>
 
                 <figure>
-                    <a href="#">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU"
-                        alt="img de projet 6">
-                    </a>
-                    <figcaption>projet n6</figcaption>
+                    <picture>
+                        <source type="img/projet-landingpage3.webp" srcset="projet-landingpage3.webp">
+                        <source type="img/projet-landingpage3.png" srcset="projet-landingpage3.png">
+                        <img class="lozad" data-src="img/projet-landingpage3.png" alt="image de projet numero 3" width="270" height="203" title="Image de mon premier projet: projet 3">
+                        <figcaption>projet n3</figcaption>
+                    </picture>
+                </figure>
+
+
+                <figure>
+                    <picture>
+                        <source type="img/projet-landingpage4.webp" srcset="projet-landingpage4.webp">
+                        <source type="img/projet-landingpage4.png" srcset="projet-landingpage4.png">
+                        <img class="lozad" data-src="img/projet-landingpage4.png" alt="image de projet numero 4" width="270" height="203" title="Image de mon premier projet: projet 4">
+                        <figcaption>projet n4</figcaption>
+                    </picture>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <source type="img/projet-landingpage5.webp" srcset="projet-landingpage5.webp">
+                        <source type="img/projet-landingpage5.png" srcset="projet-landingpage5.png">
+                        <img class="lozad" data-src="img/projet-landingpage5.png" alt="image de projet numero 5" width="270" height="203" title="Image de mon premier projet: projet 5">
+                        <figcaption>projet n5</figcaption>
+                    </picture>
+                </figure>
+
+                <figure>
+                    <picture>
+                        <source type="img/projet-landingpage6.webp" srcset="projet-landingpage6.webp">
+                        <source type="img/projet-landingpage6.png" srcset="projet-landingpage6.png">
+                        <img class="lozad" data-src="img/projet-landingpage6.png" alt="image de projet numero 6" width="270" height="203" title="Image de mon premier projet: projet 6">
+                        <figcaption>projet n6</figcaption>
+                    </picture>
                 </figure>
 
             </div>
@@ -190,32 +204,21 @@ if(isset($langs[$current_lang])) unset($langs[$current_lang]);
  
         </section>
 
-        <!-- <h3>Lozard.Js </h3>
-        <div class="thumb">
-         <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
-        </div>
-        <div class="thumb">
-            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
-        </div>
 
-        <div class="thumb">
-            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
-        </div>
-        <div class="thumb">
-            <img class="lozad" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ_G9U9095poYEIvtg8fnA2Ef3dcjLEebptQ&usqp=CAU">
-        </div> -->
 
         
         <section id="contact">
             <h3>Contactez moi! </h3>
 
-            <label for="name">Votre nom</label>
-            <input type="text" name="text" id="text">
+            <form action="">
+                <label for="name">Votre nom</label>
+                <input type="text" name="name" id="name">
 
-            <label for="email">Votre email</label>
-            <input type="email" name="email" id="email">
+                <label for="email">Votre email</label>
+                <input type="email" name="email" id="email">
 
-            <button type="submit">Recevoir</button>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
 
     </main>
